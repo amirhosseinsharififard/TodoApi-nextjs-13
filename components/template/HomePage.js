@@ -11,7 +11,7 @@ const HomePage = () => {
   const fetchApi = async () => {
     const res = await fetch("/api/todos");
     const data = await res.json();
-    console.log(data.todo.sortedData);
+    // console.log(data.todo.sortedData);
     if (data.status === "success") return setTodos(data.todo.sortedData);
   };
 
